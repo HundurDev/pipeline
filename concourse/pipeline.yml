@@ -1,7 +1,7 @@
 jobs:
 
 # Replace params / app_name with your heroku app name
-- name: murmuring-wave-16200
+- name: HundurDev
   plan:
   - aggregate:
     - get: heroku-example
@@ -11,7 +11,7 @@ jobs:
     file: heroku-example/concourse/heroku_sync.yml
     input_mapping: {source: heroku-example-app}
     params:
-      app_name: glennbech-heroku-example
+      app_name: murmuring-wave-16200
       heroku_email: ((heroku_email))
       heroku_api_token: ((heroku_api_token))
 
